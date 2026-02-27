@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ALAS BAPTIST CHURCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- OFFLINE SCREEN -->
+<div id="offline-screen">
+    <div class="offline-box">
+        <div class="loader"></div>
+        <h2>Loading...</h2>
+        <p>Please connect to the internet.</p>
+    </div>
+</div>
+
+<header>
+    <img src="logo.jpg" alt="Church Logo">
+    <div>
+        <h1>ALAS BAPTIST CHURCH</h1>
+        <p class="subtitle">Pastor Samuel Apoya Remulin</p>
+    </div>
+</header>
+
+<!-- Navigation Buttons -->
+<div class="subjects-container">
+    <button class="subject-btn active" data-subject="home">Home</button>
+    <button class="subject-btn" data-subject="about">About</button>
+    <button class="subject-btn" data-subject="mass">Mass Schedule</button>
+    <button class="subject-btn" data-subject="events">Events</button>
+    <button class="subject-btn" data-subject="ministries">Ministries</button>
+    <button class="subject-btn" data-subject="gallery">Gallery</button>
+    <button class="subject-btn" data-subject="audio">Audio Devotions</button>
+    <button class="subject-btn" data-subject="contact">Contact</button>
+</div>
+
+<div class="content-area">
+
+    <!-- HOME -->
+    <div class="subject-content active" id="home">
+        <h2>Welcome to ALAS Baptist Church</h2>
+        <p class="desc">Growing Together in Christ</p>
+
+        <div class="card">
+            <h3>Sunday Worship Service</h3>
+            <p>Join us every Sunday for worship, prayer, and fellowship as we grow in faith together.</p>
+        </div>
+
+        <div class="card">
+            <h3>Scripture of the Week</h3>
+            <p>“For where two or three gather in my name, there am I with them.” — Matthew 18:20</p>
+        </div>
+
+        <div class="card">
+            <h3>Daily Bible Verse</h3>
+            <p>“The Lord is my shepherd; I shall not want.” — Psalm 23:1</p>
+        </div>
+
+        <div class="card">
+            <h3>Encouraging Message</h3>
+            <p>“Let your light shine before others, so that they may see your good works and give glory to your Father in heaven.” — Matthew 5:16</p>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="subject-content" id="about">
+        <h2>About ALAS Baptist Church</h2>
+
+        <div class="card">
+            <h3>Our Vision</h3>
+            <p>To be a Christ-centered church transforming lives through the Word of God.</p>
+        </div>
+
+        <div class="card">
+            <h3>Our Mission</h3>
+            <p>To preach the Gospel, disciple believers, and serve the community with love and integrity.</p>
+        </div>
+    </div>
+
+    <!-- MASS SCHEDULE -->
+    <div class="subject-content" id="mass">
+        <h2>Mass Schedule</h2>
+
+        <div class="card">
+            <h3>Sunday Worship Service</h3>
+            <p><strong>Day:</strong> Every Sunday</p>
+            <p><strong>Time:</strong> 9:00 AM – 11:00 AM</p>
+            <p><strong>Venue:</strong> ALAS Baptist Church Worship Center, Alas, Mandaon, Masbate</p>
+            <p><strong>Preacher:</strong> Pastor Samuel Apoya Remulin</p>
+        </div>
+
+        <div class="card">
+            <h3>Saturday Evening Bible Study</h3>
+            <p><strong>Day:</strong> Every Saturday</p>
+            <p><strong>Time:</strong> 6:00 PM – 8:00 PM</p>
+            <p><strong>Venue:</strong> Cabitan Bible Study Center, Cabitan, Mandaon, Masbate</p>
+            <p><strong>Preacher:</strong> Pastor Samuel Apoya Remulin</p>
+        </div>
+    </div>
+
+    <!-- EVENTS -->
+    <div class="subject-content" id="events">
+        <h2>Church Events</h2>
+
+        <div class="card">
+            <h3>📢 Upcoming Church Gathering</h3>
+            <p><strong>Date:</strong> February 28, 2026</p>
+            <p><strong>Time:</strong> 3:00 PM Onward</p>
+            <p><strong>Venue:</strong> Cabitan Bible Study Center, Cabitan, Mandaon, Masbate</p>
+            <p>Everyone is welcome to join us for fellowship and spiritual growth.</p>
+        </div>
+    </div>
+
+    <!-- MINISTRIES -->
+    <div class="subject-content" id="ministries">
+        <h2>Church Ministries</h2>
+
+        <div class="card">
+            <p>• Youth Ministry</p>
+            <p>• Music Ministry</p>
+            <p>• Prayer Ministry</p>
+            <p>• Outreach Ministry</p>
+        </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="subject-content" id="gallery">
+        <h2>Church Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="6.jpg" alt="Church Event 2">
+                <p class="gallery-desc">
+                    Celebrating the 508th Church Reformation at Pastor Sam’s home, together with our brothers and sisters from Alas Baptist Church.
+                    Thank you Pastor Alex & Pastor Sam for faithfully preaching and reminding us about Reformation and pointing us back to the foundation of our faith.
+                    Scripture alone, Christ alone, Grace alone, faith alone and to God be the glory alone!
+                    Church reformed, always reforming according to the word of God.
+                </p>
+                <button class="see-more-btn">See More</button>
+                <a href="6.jpg" download class="download-btn">Download</a>
+            </div>
+
+            <div class="gallery-item">
+                <img src="clinic.jpg" alt="Masbate Children’s Clinic">
+                <p class="gallery-desc">
+                    Masbate Children’s Clinic celebrates its anniversary with a heart for service. Grateful to Alas Baptist Church for welcoming our medical mission.
+                    Thank you, Terramedic Inc. and Intermed Pharma, for standing with us in caring for the children of Masbate.
+                </p>
+                <button class="see-more-btn">See More</button>
+                <a href="clinic.jpg" download class="download-btn">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AUDIO DEVOTIONS -->
+    <div class="subject-content" id="audio">
+        <h2>Audio Devotions</h2>
+        <div class="audio-grid">
+            <!-- Audio 1 -->
+            <div class="audio-item">
+                <h3>Pagpapatawad</h3>
+                <p><strong>Speaker:</strong> Pastor Samuel Apoya Remulin</p>
+                <audio controls preload="metadata">
+                    <source src="pagpapatawad.mp3" type="audio/mpeg">
+                </audio>
+                <p class="audio-desc">
+                    Pagpapatawad: Totoo ba Ang kasabihang "To forgive is to forget?"
+                </p>
+                <button class="see-more-btn">See More</button>
+                <a href="pagpapatawad.mp3" download class="download-btn">Download</a>
+            </div>
+
+            <!-- Audio 2 -->
+            <div class="audio-item">
+                <h3>YHWH – Ang Dakilang Ama sa Langit</h3>
+                <p><strong>Speaker:</strong> Pastor Samuel Apoya Remulin</p>
+                <audio controls preload="metadata">
+                    <source src="YHWH__Ang_Dakilang_Ama_sa_LangitYHWH__Ang_Dakilang_Ama_sa_Langit.mp3" type="audio/mpeg">
+                </audio>
+                <p class="audio-desc">
+                    YHWH: Ang Dakilang Ama sa Langit
+                </p>
+                <button class="see-more-btn">See More</button>
+                <a href="YHWH__Ang_Dakilang_Ama_sa_LangitYHWH__Ang_Dakilang_Ama_sa_Langit.mp3" download class="download-btn">Download</a>
+            </div>
+
+            <!-- Audio 3 -->
+            <div class="audio-item">
+                <h3>Giving Jesus First Place – Daily Devotional</h3>
+                <audio controls preload="metadata">
+                    <source src="Giving_Jesus_First_Place_–_Daily_Devotional(48k).mp3" type="audio/mpeg">
+                </audio>
+                <p class="audio-desc">
+                    Reflecting on putting Jesus at the center of our lives each day.
+                </p>
+                <button class="see-more-btn">See More</button>
+                <a href="Giving_Jesus_First_Place_–_Daily_Devotional(48k).mp3" download class="download-btn">Download</a>
+            </div>
+
+            <!-- Audio 4 -->
+            <div class="audio-item">
+                <h3>Who God Says You Are – Daily Devotion</h3>
+                <audio controls preload="metadata">
+                    <source src="Who_God_Says_You_Are_-_Daily_Devotion(48k).mp3" type="audio/mpeg">
+                </audio>
+                <p class="audio-desc">
+                    Understanding your identity in Christ and the promises God has for you.
+                </p>
+                <button class="see-more-btn">See More</button>
+                <a href="Who_God_Says_You_Are_-_Daily_Devotion(48k).mp3" download class="download-btn">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="subject-content" id="contact">
+        <h2>Contact Us</h2>
+        <div class="card">
+            <p><strong>Location:</strong> Alas, Mandaon, Masbate</p>
+            <p><strong>Phone:</strong> 09XXXXXXX</p>
+            <p><strong>Email:</strong> alasbaptistchurch@email.com</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 ALAS Baptist Church | Discovered by Renz Amoroto
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

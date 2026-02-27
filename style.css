@@ -1,0 +1,282 @@
+/* =============================== */
+/* GENERAL BODY & FONT SETTINGS   */
+/* =============================== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f4f4; /* light warm background */
+    user-select: none;
+    overflow-x: hidden;
+}
+
+/* =============================== */
+/* HEADER */
+/* =============================== */
+header {
+    background: #800000; /* MAROON */
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* =============================== */
+/* NAVIGATION BUTTONS / TABS */
+/* =============================== */
+.subjects-container {
+    display: flex;
+    overflow-x: auto;
+    background: white;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.subject-btn {
+    position: relative;
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #e8dede;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.subject-btn.active {
+    background: #800000; /* MAROON */
+    color: white;
+}
+
+.subject-btn:hover {
+    background: #5a0000; /* DARKER MAROON */
+    color: white;
+}
+
+/* NOTIFICATION BADGE */
+.notif-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ffcc00;
+    color: black;
+    font-size: 10px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+/* =============================== */
+/* CONTENT AREA */
+/* =============================== */
+.content-area {
+    padding: 20px;
+}
+
+.subject-content {
+    display: none;
+}
+
+.subject-content.active {
+    display: block;
+}
+
+.desc {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.instructor {
+    font-weight: 600;
+    color: #800000; /* MAROON */
+    margin-bottom: 15px;
+}
+
+/* POST TIME */
+.post-time {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+}
+
+/* =============================== */
+/* CARD DESIGN */
+/* =============================== */
+.card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 5px solid #800000; /* Church accent */
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #800000; /* MAROON */
+}
+
+/* =============================== */
+/* FOOTER */
+/* =============================== */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #777;
+}
+
+/* =============================== */
+/* OFFLINE SCREEN */
+/* =============================== */
+#offline-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #800000; /* MAROON */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: white;
+    text-align: center;
+}
+
+.offline-box h2 {
+    margin: 10px 0 5px;
+}
+
+.loader {
+    border: 5px solid #ffffff30;
+    border-top: 5px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* =============================== */
+/* GALLERY SPECIFIC STYLES */
+/* =============================== */
+.gallery-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.short-text {
+    max-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.short-text.expanded {
+    max-height: 500px;
+}
+
+.see-more-btn, .download-btn {
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    background: #800000; /* MAROON */
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.see-more-btn:hover, .download-btn:hover {
+    background: #5a0000; /* DARKER MAROON */
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-left: 5px solid #800000;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gallery-desc {
+    max-height: 60px; /* truncate height */
+    overflow: hidden;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    transition: max-height 0.3s ease;
+}
+
+.gallery-desc.expanded {
+    max-height: 500px; /* allow full text */
+}
+
+.see-more-btn {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background: #800000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-btn {
+    margin-top: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    background: #555;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
